@@ -12,3 +12,4 @@ class ChatAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Chat, ChatAdmin)
+admin.site.register(ChatParticipant)

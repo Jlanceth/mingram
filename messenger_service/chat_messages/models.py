@@ -11,7 +11,7 @@ class Message(models.Model):
     )
 
     sender_id = models.IntegerField()
-    receiver_id = models.IntegerField()
+    receiver_id = models.IntegerField(null=True)
     text = models.TextField()
 
     created_at = models.DateTimeField(auto_now_add=True)

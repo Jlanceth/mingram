@@ -16,6 +16,7 @@ def send_message(sender_id, receiver_id, text):
     message = Message.objects.create(
         chat=chat,
         sender_id=sender_id,
+        receiver_id=receiver_id,
         text=text
     )
 

@@ -11,6 +11,7 @@ class MessageSerializer(serializers.ModelSerializer):
 
     senderId = serializers.IntegerField(source="sender_id")
     chatId = serializers.IntegerField(source="chat_id")
+    receiverId = serializers.IntegerField(source="receiver_id")
 
     class Meta:
         model = Message
@@ -18,6 +19,7 @@ class MessageSerializer(serializers.ModelSerializer):
             "id",
             "chatId",
             "senderId",
+            "receiverId",
             "text",
             "created_at",
         ]
